@@ -12,8 +12,13 @@
         <div class="common">
           <h2 class="marginb">Make a Transaction</h2>
           <label class="" for="amount">Amount</label>
-          <br>
-          <input type="number" name="amount" id="amount">
+          <br />
+          <input
+            type="number"
+            name="amount"
+            id="amount"
+            placeholder="Enter Amount"
+          />
 
           <div class="">
             <button id="deposit-btn" class="deposit-btn">Deposit</button>
@@ -24,40 +29,23 @@
           <h1 class="marginb">My Expense Tracker</h1>
           <div class="flex-col">
             <h4 class="">Total Balance</h4>
-            <h1 id="balance" class="">$5000</h1>
+            <h1 class="">$<span id="balance">0</span></h1>
           </div>
           <div class="flex-row balance-extra">
             <div class="flex-col">
-              <h4 class="deposit">Deposit</h4>
-              <h5 id="deposit" class="">$5000</h5>
+              <h4 class="deposit">Total Deposit</h4>
+              <h5 class="">$<span id="deposit">0</span></h5>
             </div>
             <div class="flex-col">
-              <h4 class="withdraw">Withdraw</h4>
-              <h5 id="withdraw" class="">$5000</h5>
+              <h4 class="withdraw">Total Withdraw</h4>
+              <h5 class="">$<span id="withdraw">0</span></h5>
             </div>
           </div>
         </div>
       </section>
       <section class="transaction-section">
         <h4 class="">Transaction History</h4>
-        <div class="inner-t">
-          <div class="flex-row">
-            <div class="flex-col">
-              <h6 class="deposit">Deposit</h6>
-              <small class="">03-01-2025</small>
-            </div>
-            <h5 class="">$500</h5>
-          </div>
-        </div>
-        <div class="inner-t">
-          <div class="flex-row">
-            <div class="flex-col">
-              <h6 class="withdraw">Withdraw</h6>
-              <small class="">03-01-2025</small>
-            </div>
-            <h5 class="">$500</h5>
-          </div>
-        </div>
+        <div id="transaction"></div>
       </section>
     </main>
     <script src="./script.js"></script>

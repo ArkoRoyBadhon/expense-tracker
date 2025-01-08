@@ -85,6 +85,15 @@ input {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 600px) {
+    .balance-section {
+        flex-direction: column-reverse;
+    }
+    body {
+        padding: 20px;
+    }
+}
+
 
 /* transaction section ======== */
 
